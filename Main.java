@@ -14,13 +14,13 @@ public class Main {
         char a = 64;
         char b = 64;
         int j;
-        int c = 25;
+        int c = 26;
         for(j = 0;j<=25;j++) {
             a++;
             b++;
-            for(int x=0;x<=25;x++) {
+            for(int x=0;x<=26;x++) {
                 if (x == j) System.out.print(a);
-                else if (x == c) System.out.print(b);
+                else if (x == c) {System.out.print(b);if (b==77) System.out.print(" ");}
                 else System.out.print(" ");
             }
             c--;
@@ -33,4 +33,6 @@ public class Main {
         }
         System.out.print(dtf.format(now));
     }
+}
+
 }
